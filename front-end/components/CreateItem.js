@@ -37,6 +37,9 @@ class CreateItem extends Component {
     }
     handleChange = e => {
         const { name, type, value } = e.target;
+        // Todo : fix bug
+        // not inital value for price
+        console.log(value);
         const val = type === 'number' ? parseFloat(value) : value;
         this.setState({ [name]: val })
     }
