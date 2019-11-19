@@ -1,7 +1,7 @@
 endpoint: ${env:PRISMA_ENDPOINT}
 # endpoint: https://us1.prisma.sh/lethienan3196-4ab4db/him-leather/dev
 datamodel: datamodel.graphql
-# secret: ${env:PRISMA_SECRET}
+secret: ${env:PRISMA_SECRET}
 hooks: 
   post-deploy:
     - graphql get-schema -p prisma
